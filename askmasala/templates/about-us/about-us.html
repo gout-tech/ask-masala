@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block content %}
+ <div class="page-title-breadcrumbs">
+                <div class="breadcrumbs-container container">
+                    <div class="breadcrumbs_wrapper">
+                        <div class="page-title-container">
+                            <h1 class="text-center">About Us</h1>
+                        </div>
+
+                        <div class="breadcrumbs-container text-center">
+                            <ul class="breadcrumbs primary-font">
+                                <li>
+                                    <a href="/">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-sep">/</li>
+                                <li>
+                                    <span>About Us</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<section>
+    <div class="section about">
+                    <div class="container">
+                        <div class="title text-center">
+                            <div class="page-title color">
+                                <h3 class="title-main">About Us</h3>
+                                <div class="title title-icon">
+                                    <h2 class="title-h2">Who we are</h2>
+                                    <p class="description">Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel
+                                        scelerisque nisl consectetur et.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-about text-center m-top">
+                            <div class="row">
+                                {% for about in about_us %}
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 mg-bottom-50">
+                                    <div class="item">
+                                        <div class="item-img">
+<!--                                            <a href="#" title="">-->
+                                                <img class="img-fluid" src="{{about.image.url}}" alt="img">
+<!--                                            </a>-->
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="sub-title">
+                                                <h4>{{about.name}}</h4>
+                                            </div>
+                                            <p>{{about.description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+</section>
+
+
+
+
+
+
+
+
+{% endblock %}

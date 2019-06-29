@@ -1,0 +1,527 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!--<section>-->
+<!--    <div class="section tiva-slideshow-wrapper">-->
+<!--                    <div id="tiva-slideshow" class="nivoSlider">-->
+<!--                        {% for sliders in home_slider.all %}-->
+
+<!--                        <a href="#" title="Slideshow image">-->
+<!--                            <img class="img-fluid" src="{{sliders.image.url}}"  alt="Slideshow image">-->
+<!--                        </a>-->
+<!--                        -->
+
+<!--                         {% endfor %}-->
+
+<!--                    </div>-->
+
+<!--                    </div>-->
+
+
+<!--</section>-->
+
+
+<section>
+    <div class="section tiva-slideshow-wrapper">
+                    <div id="tiva-slideshow" class="nivoSlider">
+                        {% for sliders in home_slider.all %}
+
+                        <a href="#" title="Slideshow image">
+                            <img class="img-fluid" src="{{sliders.image.url}}" title="#caption1" alt="Slideshow image">
+                        </a>
+
+                        {% endfor %}
+
+                    </div>
+
+                    <div id="caption1" class="nivo-html-caption hidden-sm hidden-xs d-none col-lg-block">
+                        <div class="tiva-caption m-left">
+                            <div class="left-right hidden-xs">
+                                <span class="font-stre ">We introduction</span>
+                            </div>
+                            <div class="right-left hidden-xs normal very_large_60">
+                                <h3>Oars Organic</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur. Cras mattis consectetur
+                                    purus sit fermentum.</p>
+                            </div>
+                            <div class="Praesent">
+                            </div>
+<!--                            <div class="right-left hidden-xs slow disciver-now">-->
+<!--                                <a class="btn button btn-green button-main" href="blog-list-right-sidebar.html" title="Shop now">learn more</a>-->
+<!--                            </div>-->
+<!--                            <div class="right-left hidden-xs slow disciver-now">-->
+<!--                                <a class="btn button button-main" href="blog-list-right-sidebar.html" title="Shop now">purchase now</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                    <div id="caption2" class="nivo-html-caption hidden-sm hidden-xs d-none col-lg-block">
+                        <div class="tiva-caption m-right">
+                            <div class="left-right hidden-xs">
+                                <span class="font-stre ">We introduction</span>
+                            </div>
+                            <div class="roll hidden-xs normal very_large_60">
+                                <h3>Oars Organic</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur. Cras mattis consectetur
+                                    purus sit fermentum.</p>
+                            </div>
+                            <div class="right-left hidden-xs slow disciver-now">
+                                <a class="btn button btn-green button-main" href="blog-list-right-sidebar.html" title="Shop now">learn more</a>
+                            </div>
+                            <div class="right-left hidden-xs slow disciver-now">
+                                <a class="btn button button-main" href="blog-list-right-sidebar.html" title="Shop now">purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</section>
+
+
+
+
+<section>
+    <div class="section about">
+                    <div class="container">
+                        <div class="title text-center">
+                            <div class="page-title color">
+                                <h3 class="title-main">About Us</h3>
+                                <div class="title title-icon">
+                                    <h2 class="title-h2">Who we are</h2>
+                                    <p class="description">Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel
+                                        scelerisque nisl consectetur et.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-about text-center m-top">
+                            <div class="row">
+                                {% for about in about_us %}
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 mg-bottom-50">
+                                    <div class="item">
+                                        <div class="item-img">
+<!--                                            <a href="#" title="">-->
+                                                <img class="img-fluid" src="{{about.image.url}}" alt="img">
+<!--                                            </a>-->
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="sub-title">
+                                                <h4>{{about.name}}</h4>
+                                            </div>
+                                            <p>{{about.description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+</section>
+
+ <section class="m-bottom-0">
+                <div class="oars-store sm-text-center pd-top-bottom">
+                    <div class="container-full">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="item-img img-left">
+                                    <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                        <img class="img-fluid" src="http://tivatheme.com/html/oars/img/intro-banner2.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="title clearfix">
+                                    <div class="page-title color">
+                                        <h3 class="title-main">Core Features</h3>
+                                        <div class="title-icon text-left">
+                                            <h2 class="title-h2">What is Oars Store?</h2>
+                                        </div>
+                                        <p class="description">Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                                            vel scelerisque nisl consectetur et.</p>
+                                    </div>
+                                    <div class="group-store m-top">
+                                        <div class="index-core-group flex-center clearfix d-flex align-items-center">
+                                            <div class="item-img float-left">
+                                                <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                                    <img class="img-fluid" src="http://tivatheme.com/html/oars/img/intro-icon4.png" alt="img">
+                                                </a>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="sub-title">
+                                                    <h4 class="no-ater">Free Shipping</h4>
+                                                    <p>With $100 or more orders. Go to Oars Store</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="index-core-group  flex-center clearfix d-flex align-items-center">
+                                            <div class="item-img float-left">
+                                                <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                                    <img class="img-fluid" src="http://tivatheme.com/html/oars/img/intro-icon1.png" alt="img">
+                                                </a>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="sub-title">
+                                                    <h4 class="no-ater">100% Organic Certified</h4>
+                                                    <p>100% Organic Cerfitifed Food &amp; Textiles</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="index-core-group flex-center clearfix d-flex align-items-center">
+                                            <div class="item-img float-left">
+                                                <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                                    <img class="img-fluid" src="http://tivatheme.com/html/oars/img/intro-icon5.png" alt="img">
+                                                </a>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="sub-title">
+                                                    <h4 class="no-ater">Secure Payment</h4>
+                                                    <p>Sercure Confirmed</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="index-core-group flex-center clearfix d-flex align-items-center">
+                                            <div class="item-img float-left">
+                                                <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                                    <img class="img-fluid" src="http://tivatheme.com/html/oars/img/intro-icon6.png" alt="img">
+                                                </a>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="sub-title">
+                                                    <h4 class="no-ater">Friendly Support</h4>
+                                                    <p>Need help : +(12) 124 987 97</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ <section>
+                <div class="section generalship">
+                    <div class="container-full">
+                        <div class="row m-0">
+                            <div class="col-lg-3 col-md-6 col-sm-12 pd-0">
+                                <div class="inner step-1 img-hover-scale">
+                                    <div class="item-img">
+                                        <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                            <img class="img-fluid" src="http://tivatheme.com/html/oars/img/home1-intro-icon1.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="title-black item-content">
+                                        <h2 class="title-h2">Step 01.</h2>
+                                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus,
+                                            porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 pd-0">
+                                <div class="inner step-2 img-hover-scale">
+                                    <div class="item-img">
+                                        <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                            <img class="img-fluid" src="http://tivatheme.com/html/oars/img/home1-intro-icon2.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="title-black item-content">
+                                        <h2 class="title-h2">Step 02.</h2>
+                                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus,
+                                            porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 pd-0">
+                                <div class="inner step-3 img-hover-scale">
+                                    <div class="item-img">
+                                        <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                            <img class="img-fluid" src="http://tivatheme.com/html/oars/img/home1-intro-icon3.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="title-black item-content">
+                                        <h2 class="title-h2">Step 03.</h2>
+                                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus,
+                                            porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 pd-0">
+                                <div class="inner step-4 img-hover-scale">
+                                    <div class="item-img">
+                                        <a href="http://tivatheme.com/html/oars/index.html#" title="">
+                                            <img class="img-fluid" src="http://tivatheme.com/html/oars/img/home1-intro-icon4.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="title-black item-content">
+                                        <h2 class="title-h2">Step 04.</h2>
+                                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus,
+                                            porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section>
+
+
+             <div class="section feature-products">
+                    <div class="container">
+                        <div class="title text-center m-bottom-2">
+                            <div class="page-title color">
+                                <h3 class="title-main">Fresh Food</h3>
+                                <div class="title title-icon">
+                                    <h2 class="title-h2">Feature Products</h2>
+                                </div>
+                            </div>
+                        </div>
+			<!-- Grid -->
+			<div id="grid" class="tab-pane active">
+				<div class="product">
+					<div class="row">
+						{% for products in product_list %}
+
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+							<div class="item item-hover-view-cart">
+
+								<div class="product-thumb">
+									<div class="product-container item-img">
+										<div class="product-image-container">
+											<a class="product-img-link" href="/products/product-details/{{ products.pk }}" >
+
+												{% for images in products.product_images.all %}
+												{% if products.product_name in images.product.product_name %}
+												{% if images.default_image %}
+												<img class="img-fluid" src="{{images.image.url}}" alt="img">
+												{% endif %}
+                                                {% endif %}
+												{% endfor %}
+											</a>
+										</div>
+									</div>
+
+<!--									<div class="product-cart-icon d-flex justify-content-around">-->
+<!--										<div class="product-actions">-->
+<!--											<a href="#">-->
+<!--												<i class="cs-icon icon-cs-cart"></i>-->
+<!--											</a>-->
+<!--										</div>-->
+<!--										<div class="product-actions">-->
+<!--											<a href="#">-->
+<!--											<i class="cs-icon icon-search"></i>-->
+<!--											</a>-->
+<!--										</div>-->
+<!--										<div class="product-actions">-->
+<!--											<a href="#">-->
+<!--												<i class="cs-icon icon-heart"></i>-->
+<!--											</a>-->
+<!--										</div>-->
+<!--									</div>-->
+								</div>
+
+<!--								<div class="product-label">-->
+<!--									<span class="product-flash">Hot</span>-->
+<!--								</div>-->
+								<div class="product-info text-center">
+									<h4 class="product-name">
+										<a href="/products/product-details/{{ products.pk }}"  >{{ products.product_name }} </a>
+									</h4>
+									<div class="price">
+										<span>RS: {{ products.price}}</span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						{% endfor %}
+					</div>
+                     <div class="page-pagination clearfix text-center">
+
+	{% if is_paginated %}
+	<span>
+		{% if page_obj.has_previous %}
+		<a class="page-numbers" href="?page={{ page_obj.previous_page_number }}">
+			<i class="fa fa-long-arrow-left"></i>
+		</a>
+		{% endif%}
+    {% for page in page_obj.paginator.page_range %}
+		<a class="page-numbers" href="?page={{ page }}"><span class="current">
+			{{ page }}
+        </span></a>
+{% endfor %}
+		{% if page_obj.has_next %}
+		<a class="page-numbers" href="?page={{ page_obj.next_page_number }}">
+			<i class="fa fa-long-arrow-right"></i>
+		</a>
+		{% endif %}
+	</span>
+	{% endif %}
+
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+
+
+
+    <div class="section testimonials no-margin-btm">
+                    <div class="container">
+                        <div class="title text-center">
+                            <div class="page-title color">
+                                <i><h3 class="title-main">Testimonials</h3></i>
+                                <div class="title title-icon">
+                                    <h2 class="title-h2">What Our Customer Saying?</h2>
+                                    <p class="description">Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel
+                                        scelerisque nisl consectetur et.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row m-top">
+                            {% for testimonials in testimonial %}
+
+                            <div class="col-sm-6">
+
+                                <div class="item clearfix d-flex align-items-center">
+
+                                    <div class="item-img hover-change">
+                                        <img class="img-fluid w-100" src="{{testimonials.image.url}}" alt="img">
+                                    </div>
+                                    <div class="item-content">
+                                        <p>{{ testimonials.description }}</p>
+                                        <div class="user-info">
+                                            <h4 class="user-name title-black">
+                                                {{ testimonials.name }}
+                                            </h4>
+                                            <span class="job">{{ testimonials.jobs }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="home-brand-logo m-top">
+                        <div class="container">
+                            <div class="home-brand-inner">
+                                <div class="home-brand-content owl-carousel owl-theme">
+                                    {% for clients_images in clients %}
+                                    <div class="brand-item brand-item-two fadeInUp animated" data-animate="fadeInUp" data-delay="100">
+                                        <a href="#">
+                                            <img class="img-fluid" src="{{clients_images.image.url}}" alt="img">
+                                            <img class="logo-hover img-fluid" src="{{clients_images.hov_image.url}}" alt="img">
+                                        </a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<section>
+                <div class="store">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12 justify-content-end">
+                                <div class="item-img position-img">
+                                    <a class="product-img-link" href="http://tivatheme.com/html/oars/product-detail.html" title="">
+                                        <img src="http://tivatheme.com/html/oars/img/intro-banner.png" alt="img" class="image-effect">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-sm-12">
+                                <div class="inner">
+                                    <div class="title item-content clearfix">
+                                        <div class=" page-title color">
+                                            <h3 class="title-main">What is Oars Store?</h3>
+                                            <div class="title-icon text-left">
+                                                <h2 class="title-h2 background-position-left">Why we are the best</h2>
+                                                <p class="description">Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus
+                                                    magna, vel scelerisque nisl consectetur et.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-toggle">
+                                        <div class="panel panel-default click1">
+                                            <div class="show-description d-flex align-items-center">
+                                                <i class="fa fa-angle-right"></i>
+                                                <p class="title-black">Get creative with courgettes</p>
+                                            </div>
+
+                                            <div class="show1 display-none">
+                                                <p>Ut fermentum massa justo sit amet risus tellus ac cursus commodo, tortor
+                                                    mauris condimentum nibh, ut fermentum massa.</p>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default click1">
+                                            <div class="show-description d-flex align-items-center">
+                                                <i class="fa fa-angle-right"></i>
+                                                <p class="title-black">Italian style meatballs with courgette ‘tagliatelle’</p>
+                                            </div>
+
+                                            <div class="show1 display-none">
+                                                <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta
+                                                    felis euismod semper. Fusce dapibus, tellus ac cursus.</p>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default click1">
+                                            <div class="show-description d-flex align-items-center">
+                                                <i class="fa fa-angle-right"></i>
+                                                <p class="title-black">How to fillet round fish (mackerel, trout, etc.)</p>
+                                            </div>
+
+                                            <div class="show1 display-none">
+                                                <p>Ut fermentum massa justo sit amet risus tellus ac cursus commodo, tortor
+                                                    mauris condimentum nibh, ut fermentum massa.</p>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default click1">
+                                            <div class="show-description d-flex align-items-center">
+                                                <i class="fa fa-angle-right"></i>
+                                                <p class="title-black">Irish fish chowder with soda bread</p>
+                                            </div>
+
+                                            <div class="show1 display-none">
+                                                <p>Ut fermentum massa justo sit amet risus tellus ac cursus commodo, tortor
+                                                    mauris condimentum nibh, ut fermentum massa.</p>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default click1 border-none">
+                                            <div class="show-description d-flex align-items-center">
+                                                <i class="fa fa-angle-right"></i>
+                                                <p class="title-black">Equipment you will need for this technique</p>
+                                            </div>
+
+                                            <div class="show1 display-none">
+                                                <p>Ut fermentum massa justo sit amet risus tellus ac cursus commodo, tortor
+                                                    mauris condimentum nibh, ut fermentum massa.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{% endblock %}

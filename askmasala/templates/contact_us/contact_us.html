@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% block content %}
+            <div class="page-title-breadcrumbs">
+                <div class="breadcrumbs-container container">
+                    <div class="breadcrumbs_wrapper">
+                        <div class="page-title-container">
+                            <h1 class="text-center">Contact Us</h1>
+                        </div>
+
+                        <div class="breadcrumbs-container text-center">
+                            <ul class="breadcrumbs primary-font">
+                                <li>
+                                    <a href="/">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-sep">/</li>
+                                <li>
+                                    <span>Contact Us</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section main-contact-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-12 m-b-50">
+                            <div class="page-title color m-bottom-2">
+                                <h3 class="title-main">About Us</h3>
+                                <div class="title title-icon">
+                                    <h2 class="title-h2">Who we are</h2>
+                                    <p class="description">Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel
+                                        scelerisque nisl consectetur et.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="content">
+                                        <p class="title-black">Amsterdam Store</p>
+                                        <p>Roeterseiland Campus Building E, 10th floor Amsterdam </p>
+                                        <p>Monday to Friday : 9am to 8pm</p>
+                                        <p>tivathem@gmail.com</p>
+                                        <p>(1200)-0989-568-331</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="content">
+                                        <p class="title-black">Singapore Store</p>
+                                        <p>25 Pandan Crescent #02-10 TIC Tech Centre Singapore</p>
+                                        <p>Monday to Friday : 9am to 8pm</p>
+                                        <p>tivathem@gmail.com</p>
+                                        <p>(1200)-0989-568-331</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-12">
+                            <div class="page-title color m-bottom-2">
+                                <h3 class="title-main">Contact Form</h3>
+                                <div class="title title-icon">
+                                    <h2 class="title-h2">Get In Touch</h2>
+                                    <p class="description">Please feel free to contact us ...</p>
+                                </div>
+                            </div>
+
+                            <div id="review">
+                                {% if messages %}
+                                    <ul class="messages">
+                                        {% for message in messages %}
+
+                                        <li {% if message.tags %} class="{{ message.tags }} color-form"{% endif %}>{{ message }}</li>
+
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                <form method="post" action="" class="new-review-form" novalidate>
+
+                                    {% csrf_token %}
+                                    {% for field in form %}
+                                    {{ field }}
+
+                                    <div class='error-message'>{{ field.errors.as_text }}</div>
+                                    {% endfor %}
+
+
+                                    <form action="contact-us"  method="post">
+                                    <div class="submit">
+
+                                        <button class="add-to-cart" type="submit">
+                                            <span class="btn view button-main">SUBMIT NOW</span>
+                                        </button>
+                                    </div>
+                                    </form>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="contact-map">
+				<div class="map">
+
+<!--						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62865.53515712218!2d76.31566124892399!3d10.008933118261782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c8e94a07a07%3A0x49921cdfae82660!2sKakkanad%2C+Kerala!5e0!3m2!1sen!2sin!4v1559818595560!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;width:100%;height:380px;" allowfullscreen></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.0943911158424!2d76.36169749999999!3d10.0090617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c9d36d17ab3%3A0x3cf6af7fe0b99871!2sAthulya+Infopark!5e0!3m2!1sen!2sin!4v1560764743761!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;width:100%;height:380px;" allowfullscreen></iframe>
+				</div>
+			</div>
+
+
+
+
+{% endblock %}
